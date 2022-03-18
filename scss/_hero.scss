@@ -1,0 +1,43 @@
+@import "_head";
+@import "_basics";
+
+.hero {
+  @extend %f-wrap;
+  padding-top: 5rem;
+  .hero__text {
+    @include d-flex(space-between, start, column);
+    gap: 3rem;
+    flex: 1 1 41rem;
+    
+    h1 {
+      font-size: 7rem;
+      line-height: 80px;
+      color: $black;
+    }
+    p {
+      font-size: 2.5rem;
+      line-height: 36px;
+      color: $grey;
+    }
+    button {
+      color: $white;
+      background: $main-color;
+      border: 1px solid $main-color;
+      border-radius: 1.4rem;
+      margin-top: 1rem;
+      padding: 2.5rem 12rem;
+      cursor: pointer;
+      font-size: 2rem;
+      &:hover {
+        color: $black;
+        background: $white;
+      }
+    }
+  }
+  .hero__image{
+      flex: 1 1 41rem;
+      img{
+          width: 100%;
+      }
+  }
+}

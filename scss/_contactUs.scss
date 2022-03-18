@@ -1,0 +1,63 @@
+@import "_head";
+@import "_basics";
+
+.contact-h1 {
+  @include d-flex;
+  padding-top: 10rem;
+  display: none;
+  h1 {
+    font-size: 5rem;
+    line-height: 80px;
+  }
+}
+.contact {
+  padding-top: 5rem;
+  @extend %f-wrap;
+  gap: 5rem;
+  .contact__image {
+    flex: 1 1 41rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 80%;
+    }
+  }
+  .contact__text {
+    flex: 1 1 55rem;
+    height: 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+    h1 {
+      font-size: 5rem;
+      line-height: 80px;
+    }
+    p {
+      font-size: 1.5rem;
+      line-height: 30px;
+      color: $grey;
+    }
+    .contact__text__input {
+      
+      input {
+        border: 1px solid $main-color;
+        padding: 0.9rem 6rem;
+        border-radius: 4px;
+      }
+      button {
+        color: $white;
+        background: $black;
+        border: 1px solid $main-color;
+        border-radius: 0.4rem;
+        margin-top: 1rem;
+        padding: 0.9rem 3rem;
+        &:hover {
+          color: $black;
+          background: $white;
+        }
+      }
+    }
+  }
+}

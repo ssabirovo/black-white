@@ -1,0 +1,49 @@
+@import "_head";
+@import "_basics";
+
+.pricing-h1 {
+  @include d-flex;
+  padding-top: 10rem;
+  h1 {
+    font-size: 5rem;
+    line-height: 80px;
+  }
+}
+.pricing {
+  @include grid(270px);
+  .pricing__content__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35vh;
+    img {
+      width: 79%;
+    }
+  }
+  .pricing__content__text {
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    h3 {
+      font-size: 2rem;
+      line-height: 48px;
+    }
+    p {
+      font-size: 1.5rem;
+      line-height: 30px;
+      color: $grey;
+    }
+    div{
+        @include d-flex(start);
+        background-color: #0001;
+        width: max-content;
+        padding: 0 3rem;
+        gap: 1rem;
+        &:hover{
+        background-color: $black;
+        color: $white;
+        }
+    }
+  }
+}

@@ -1,0 +1,129 @@
+@import "_header";
+@import "_hero";
+@import "_skills";
+@import "_aboutUs";
+@import "_pricing";
+@import "_contactUs";
+@import "_footer";
+
+// media
+@media (max-width: 1200px) {
+  .header {
+    padding: 1.5rem 2rem;
+  }
+  section {
+    padding: 3rem 5%;
+  }
+  .skills-courses {
+    grid-template-areas:
+      "A B "
+      "C D ";
+    .course .areas {
+      flex-direction: column-reverse;
+    }
+  }
+  .aboutUs {
+    text-align: center;
+    flex-direction: column-reverse;
+    .aboutUs__text {
+      .eye-h1 {
+        display: none;
+      }
+    }
+    .hidden-h1 {
+      display: inline-block;
+    }
+  }
+}
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+  .header {
+    padding: 2rem;
+  }
+  section {
+    padding: 3rem 2rem;
+  }
+  .skills-courses {
+    grid-template-areas:
+      "A B "
+      "C D ";
+    .course .areas {
+      flex-direction: column-reverse;
+    }
+  }
+}
+@media (max-width: 923px) {
+  .contact-h1 {
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+  }
+
+  .contact__text {
+    padding-top: 10rem;
+    text-align: center;
+    h1 {
+      display: none;
+    }
+  }
+}
+@media (max-width: 783px) {
+  #menu-btn {
+    display: inline-block;
+  }
+  .navbar,
+  .btn {
+    display: none;
+  }
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+    .hero__text {
+      align-items: center;
+    }
+  }
+}
+@media (max-width: 600px) {
+  .pricing__content__text {
+    text-align: center;
+    align-items: center;
+  }
+}
+@media (max-width: 495px) {
+  .footer{
+    padding-top: 15rem
+  }
+  .footer__text{
+    text-align: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+}
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+  .skills-courses {
+    grid-template-areas:
+      "A"
+      "B"
+      "C"
+      "D";
+    .course {
+      text-align: center;
+      // align-items: center;
+    }
+  }
+  .aboutUs__text__numbers {
+    flex-direction: column;
+    gap: 3rem;
+    padding-top: 3rem;
+  }
+}
+@media (max-width: 320px) {
+  html {
+    font-size: 40%;
+  }
+}
